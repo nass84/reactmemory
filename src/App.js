@@ -80,14 +80,17 @@ function App() {
   }, []);
 
   // If all cards are matched true, reset the game
-  // display congratulations message
+  // display congratulations message after 1 turn
 
-  useEffect(() => {
-    if (cards.every((card) => card.matched === true)) {
-      setTimeout(() => shuffleCards(), 3000);
+ useEffect(() => {
+    if (cards.every((card) => card.matched)) {
       setCongrats(true);
+      setTimeout(() => shuffleCards(), 3000);
+    } else {
+      setCongrats(false);
     }
   }, [cards]);
+  
 
   // If game resets, hide congratulations message
   useEffect(() => {
