@@ -3,13 +3,14 @@ import { useEffect, useState } from "react";
 import SingleCard from "./components/SingleCard";
 
 const cardImages = [
-  { src: "/img/helmet-1.png", matched: false },
-  { src: "/img/potion-1.png", matched: false },
-  { src: "/img/ring-1.png", matched: false },
-  { src: "/img/scroll-1.png", matched: false },
-  { src: "/img/shield-1.png", matched: false },
-  { src: "/img/sword-1.png", matched: false },
-];
+  
+  { "src": "/img/helmet-1.png", matched: false },
+  { "src": "/img/potion-1.png", matched: false },
+  { "src": "/img/ring-1.png", matched: false },
+  { "src": "/img/scroll-1.png", matched: false },
+  { "src": "/img/shield-1.png", matched: false },
+  { "src": "/img/sword-1.png", matched: false },
+]
 
 function App() {
   const [cards, setCards] = useState([]);
@@ -18,6 +19,8 @@ function App() {
   const [choiceTwo, setChoiceTwo] = useState(null);
   const [disabled, setDisabled] = useState(false);
   const [congrats, setCongrats] = useState(false);
+
+
 
   //shuffle the cards
   const shuffleCards = () => {
@@ -36,7 +39,7 @@ function App() {
     choiceOne ? setChoiceTwo(card) : setChoiceOne(card);
   };
 
-  // compare 2 selected cards
+  // compare 2 selected cards and reset
 
   useEffect(() => {
     if (choiceOne && choiceTwo) {
@@ -73,13 +76,14 @@ function App() {
     setChoiceOne(null);
     setChoiceTwo(null);
     setTurns(0);
+    setCongrats(false);
   }, []);
 
-  // If all cards are matched, reset the game
+  // If all cards are matched true, reset the game
   // display congratulations message
 
   useEffect(() => {
-    if (cards.every((card) => card.matched)) {
+    if (cards.every((card) => card.matched === true)) {
       setTimeout(() => shuffleCards(), 3000);
       setCongrats(true);
     }
@@ -94,10 +98,11 @@ function App() {
 
   return (
     <div className="App">
+      {!congrats && <h1>Meah Match</h1>}
       {congrats && (
-        <h1 className="congrats">Congratulations! You completed Meah Match in {turns} turns! </h1>
-      )}
-      {!congrats && (<h1>Meah Match</h1>
+        <h1 className="congrats">
+          Congratulations! You completed Meah Match in {turns} turns!{" "}
+        </h1>
       )}
       <button onClick={shuffleCards}>New Game</button>
       <div className="card-grid">
