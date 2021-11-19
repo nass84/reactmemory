@@ -13,6 +13,16 @@ button {
   font-size: 1em;
 }
 button:hover {
-  background: #c23866;
+  background: #3d93c5;
   color: #fff;
+}
+.card-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.congrats {
+  color: rgba(255, 68, 0, 0.747);
 }
