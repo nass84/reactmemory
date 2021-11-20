@@ -3,14 +3,13 @@ import { useEffect, useState } from "react";
 import SingleCard from "./components/SingleCard";
 
 const cardImages = [
-  
-  { "src": "/reactmemory/img/helmet-1.png", matched: false },
-  { "src": "/reactmemory/img/potion-1.png", matched: false },
-  { "src": "/reactmemory/img/ring-1.png", matched: false },
-  { "src": "/reactmemory/img/scroll-1.png", matched: false },
-  { "src": "/reactmemory/img/shield-1.png", matched: false },
-  { "src": "/reactmemory/img/sword-1.png", matched: false },
-]
+  { src: "/reactmemory/img/helmet-1.png", matched: false },
+  { src: "/reactmemory/img/potion-1.png", matched: false },
+  { src: "/reactmemory/img/ring-1.png", matched: false },
+  { src: "/reactmemory/img/scroll-1.png", matched: false },
+  { src: "/reactmemory/img/shield-1.png", matched: false },
+  { src: "/reactmemory/img/sword-1.png", matched: false },
+];
 
 function App() {
   const [cards, setCards] = useState([]);
@@ -19,8 +18,6 @@ function App() {
   const [choiceTwo, setChoiceTwo] = useState(null);
   const [disabled, setDisabled] = useState(false);
   const [congrats, setCongrats] = useState(false);
-
-
 
   //shuffle the cards
   const shuffleCards = () => {
@@ -80,17 +77,15 @@ function App() {
   }, []);
 
   // If all cards are matched true, reset the game
-  // display congratulations message after 1 turn
+  // display congratulations message
 
- useEffect(() => {
-    if (cards.every((card) => card.matched)) {
-      setCongrats(true);
+  useEffect(() => {
+    if (cards.length > 0 && cards.every((card) => card.matched === true)) {
       setTimeout(() => shuffleCards(), 3000);
-    } else {
-      setCongrats(false);
+
+      setCongrats(true);
     }
   }, [cards]);
-  
 
   // If game resets, hide congratulations message
   useEffect(() => {
