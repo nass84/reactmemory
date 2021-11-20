@@ -108,8 +108,9 @@ function App() {
           Congratulations! You completed Meah Match in {turns} turns!{" "}
         </h1>
       )}
-
+        <div className="button-div">
       <button onClick={shuffleCards} className="new-button">New Game</button>
+      </div>
       <div className="card-grid">
         {cards.map((card) => (
           <SingleCard
