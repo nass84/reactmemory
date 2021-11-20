@@ -1,8 +1,6 @@
 .App {
-  width: 860px;
-  margin-top: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
@@ -45,11 +43,10 @@ a:hover {
   color: #3d93c5;
 }
 
-@media screen and (max-width: 900px) {
-  .card img {
-    width: 70px;
+@media screen and (min-width: 800px) {
+  .card-grid {
+    width: 860px;
+    margin-left:  auto;
+    margin-right: auto;
   }
-
-  
 }
-
