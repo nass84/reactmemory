@@ -9,11 +9,11 @@ import sword from "./img/sword-1.png";
 import scroll from "./img/scroll-1.jpg";
 
 const cardImages = [
-  { src: helmet , matched: false },
-  { src: potion , matched: false },
-  { src: ring , matched: false },
-  { src: scroll , matched: false },
-  { src: shield , matched: false },
+  { src: helmet, matched: false },
+  { src: potion, matched: false },
+  { src: ring, matched: false },
+  { src: scroll, matched: false },
+  { src: shield, matched: false },
   { src: sword, matched: false },
 ];
 
@@ -102,14 +102,14 @@ function App() {
 
   return (
     <div className="App">
-      {!congrats && <h1>Meah Match</h1> 
-      }
+      {!congrats && <h1 className="title">Meah Match</h1>}
       {congrats && (
         <h1 className="congrats">
           Congratulations! You completed Meah Match in {turns} turns!{" "}
         </h1>
       )}
-      <button onClick={shuffleCards}>New Game</button>
+
+      <button onClick={shuffleCards} className="new-button">New Game</button>
       <div className="card-grid">
         {cards.map((card) => (
           <SingleCard
@@ -122,7 +122,16 @@ function App() {
         ))}
       </div>
       <p>Turns: {turns}</p>
-      <h3>Learn to code with <a href="https://www.schoolofcode.co.uk/" target="_blank" rel="noreferrer">School of Code</a> </h3>
+      <h2 className="soc-link">
+        Learn to code with{" "}
+        <a
+          href="https://www.schoolofcode.co.uk/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          School of Code
+        </a>{" "}
+      </h2>
     </div>
   );
 }

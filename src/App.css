@@ -1,7 +1,10 @@
 .App {
   max-width: 860px;
-  margin: 40px auto;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
 }
+
 button {
   background: none;
   border: 2px solid #fff;
@@ -26,3 +29,18 @@ button:hover {
 .congrats {
   color: rgba(255, 68, 0, 0.747);
 }
+
+.soc-link {
+  font-size: 1.5rem;
+
+}
+
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: #3d93c5;
+}
+
