@@ -1,20 +1,27 @@
 {
   "files": {
     "main.css": "/reactmemory/static/css/main.27f58cd9.chunk.css",
-    "main.js": "/reactmemory/static/js/main.1d46ebed.chunk.js",
-    "main.js.map": "/reactmemory/static/js/main.1d46ebed.chunk.js.map",
+    "main.js": "/reactmemory/static/js/main.09c628ba.chunk.js",
+    "main.js.map": "/reactmemory/static/js/main.09c628ba.chunk.js.map",
     "runtime-main.js": "/reactmemory/static/js/runtime-main.64bcf2dd.js",
     "runtime-main.js.map": "/reactmemory/static/js/runtime-main.64bcf2dd.js.map",
     "static/js/2.4bd328cf.chunk.js": "/reactmemory/static/js/2.4bd328cf.chunk.js",
     "static/js/2.4bd328cf.chunk.js.map": "/reactmemory/static/js/2.4bd328cf.chunk.js.map",
     "index.html": "/reactmemory/index.html",
     "static/css/main.27f58cd9.chunk.css.map": "/reactmemory/static/css/main.27f58cd9.chunk.css.map",
-    "static/js/2.4bd328cf.chunk.js.LICENSE.txt": "/reactmemory/static/js/2.4bd328cf.chunk.js.LICENSE.txt"
+    "static/js/2.4bd328cf.chunk.js.LICENSE.txt": "/reactmemory/static/js/2.4bd328cf.chunk.js.LICENSE.txt",
+    "static/media/cover.67ea26b1.png": "/reactmemory/static/media/cover.67ea26b1.png",
+    "static/media/helmet-1.4802ee0c.png": "/reactmemory/static/media/helmet-1.4802ee0c.png",
+    "static/media/potion-1.a25b4a45.png": "/reactmemory/static/media/potion-1.a25b4a45.png",
+    "static/media/ring-1.2199f03a.jpg": "/reactmemory/static/media/ring-1.2199f03a.jpg",
+    "static/media/scroll-1.142dd095.jpg": "/reactmemory/static/media/scroll-1.142dd095.jpg",
+    "static/media/shield-1.80631786.jpg": "/reactmemory/static/media/shield-1.80631786.jpg",
+    "static/media/sword-1.2dfc105c.png": "/reactmemory/static/media/sword-1.2dfc105c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.64bcf2dd.js",
     "static/js/2.4bd328cf.chunk.js",
     "static/css/main.27f58cd9.chunk.css",
-    "static/js/main.1d46ebed.chunk.js"
+    "static/js/main.09c628ba.chunk.js"
   ]
 }
