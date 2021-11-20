@@ -1,4 +1,5 @@
 import "./SingleCard.css";
+import cover from "../img/cover.png";
 
 export default function SingleCard({ card, handleChoice, flipped, disabled }) {
   
@@ -14,7 +15,7 @@ export default function SingleCard({ card, handleChoice, flipped, disabled }) {
         <img className="front" src={card.src} alt="card front" />
         <img
           className="back"
-          src="/reactmemory/img/cover.png"
+          src={cover}
           onClick={handleClick}
           alt="card back"
         />

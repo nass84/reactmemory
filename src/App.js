@@ -1,14 +1,20 @@
 import "./App.css";
 import { useEffect, useState } from "react";
 import SingleCard from "./components/SingleCard";
+import helmet from "./img/helmet-1.png";
+import potion from "./img/potion-1.png";
+import ring from "./img/ring-1.jpg";
+import shield from "./img/shield-1.jpg";
+import sword from "./img/sword-1.png";
+import scroll from "./img/scroll-1.jpg";
 
 const cardImages = [
-  { src: "/reactmemory/img/helmet-1.png", matched: false },
-  { src: "/reactmemory/img/potion-1.png", matched: false },
-  { src: "/reactmemory/img/ring-1.png", matched: false },
-  { src: "/reactmemory/img/scroll-1.png", matched: false },
-  { src: "/reactmemory/img/shield-1.png", matched: false },
-  { src: "/reactmemory/img/sword-1.png", matched: false },
+  { src: helmet , matched: false },
+  { src: potion , matched: false },
+  { src: ring , matched: false },
+  { src: scroll , matched: false },
+  { src: shield , matched: false },
+  { src: sword, matched: false },
 ];
 
 function App() {
@@ -96,7 +102,8 @@ function App() {
 
   return (
     <div className="App">
-      {!congrats && <h1>Meah Match</h1>}
+      {!congrats && <h1>Meah Match</h1> 
+      }
       {congrats && (
         <h1 className="congrats">
           Congratulations! You completed Meah Match in {turns} turns!{" "}
@@ -115,6 +122,7 @@ function App() {
         ))}
       </div>
       <p>Turns: {turns}</p>
+      <h3>Learn to code with <a href="https://www.schoolofcode.co.uk/" target="_blank" rel="noreferrer">School of Code</a> </h3>
     </div>
   );
 }
