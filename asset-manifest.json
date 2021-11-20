@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/reactmemory/static/css/main.27f58cd9.chunk.css",
-    "main.js": "/reactmemory/static/js/main.09c628ba.chunk.js",
-    "main.js.map": "/reactmemory/static/js/main.09c628ba.chunk.js.map",
+    "main.css": "/reactmemory/static/css/main.68772dce.chunk.css",
+    "main.js": "/reactmemory/static/js/main.2733a767.chunk.js",
+    "main.js.map": "/reactmemory/static/js/main.2733a767.chunk.js.map",
     "runtime-main.js": "/reactmemory/static/js/runtime-main.64bcf2dd.js",
     "runtime-main.js.map": "/reactmemory/static/js/runtime-main.64bcf2dd.js.map",
     "static/js/2.4bd328cf.chunk.js": "/reactmemory/static/js/2.4bd328cf.chunk.js",
     "static/js/2.4bd328cf.chunk.js.map": "/reactmemory/static/js/2.4bd328cf.chunk.js.map",
     "index.html": "/reactmemory/index.html",
-    "static/css/main.27f58cd9.chunk.css.map": "/reactmemory/static/css/main.27f58cd9.chunk.css.map",
+    "static/css/main.68772dce.chunk.css.map": "/reactmemory/static/css/main.68772dce.chunk.css.map",
     "static/js/2.4bd328cf.chunk.js.LICENSE.txt": "/reactmemory/static/js/2.4bd328cf.chunk.js.LICENSE.txt",
     "static/media/cover.67ea26b1.png": "/reactmemory/static/media/cover.67ea26b1.png",
     "static/media/helmet-1.4802ee0c.png": "/reactmemory/static/media/helmet-1.4802ee0c.png",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.64bcf2dd.js",
     "static/js/2.4bd328cf.chunk.js",
-    "static/css/main.27f58cd9.chunk.css",
-    "static/js/main.09c628ba.chunk.js"
+    "static/css/main.68772dce.chunk.css",
+    "static/js/main.2733a767.chunk.js"
   ]
 }
